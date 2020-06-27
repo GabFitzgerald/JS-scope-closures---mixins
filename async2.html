@@ -5,13 +5,16 @@
 </head>
 <body>
     <script>
-    
-        $.get('https://api.chucknorris.io/jokes/random', data => {
-            console.log(data)
+        for (let i=0; i < 5; i++) {
             $.get('https://api.chucknorris.io/jokes/random', data => {
                 console.log(data)
-            })    
-        )} 
+            })
+        }
+        
+        //     $.get('https://api.chucknorris.io/jokes/random', data => {
+        //         console.log(data)
+        //     })    
+        // )} 
         console.log("request sent")
     </script>
     
